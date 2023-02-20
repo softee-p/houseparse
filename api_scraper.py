@@ -2,8 +2,8 @@ from tools import start_cont, offload, process, sleep
 import requests
 
 
-url = "https://www.spitogatos.gr/n_api/v1/properties/search-results"
-filename = "attiki.json"
+url = "gatos.gr/n_api/v1/properties/search-results"
+filename = "area.json"
 #temp results until first request
 results = 10000
 
@@ -19,7 +19,7 @@ headers = {
         "Accept-Encoding": "gzip, deflate, br",
         "DNT": "1",
         "Connection": "keep-alive",
-        "Referer": "https://www.spitogatos.gr/pwliseis-katoikies/anazitisi-xarti?latitudeLow=37.819006&latitudeHigh=38.121323&longitudeLow=23.517609&longitudeHigh=24.081688&zoom=12",
+        "Referer": "gatos.gr/pwliseis-katoikies/anazitisi-xarti?latitudeLow=37.819006&latitudeHigh=38.121323&longitudeLow=23.517609&longitudeHigh=24.081688&zoom=12",
         "Cookie": f'{cookie2}',
         "Sec-Fetch-Dest": "empty",
         "Sec-Fetch-Mode": "cors",
